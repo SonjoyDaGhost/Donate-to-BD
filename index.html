@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for BD</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend-normal {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bg-slate {
+            background-color: rgba(241, 245, 249, 0.98);
+        }
+
+        .w-max-content {
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body class="lexend-normal">
+    <header class="sticky top-0 z-10">
+        <div class="navbar bg-orange-50   h-24">
+            <div class="navbar-start md:ml-16">
+                <a href="blog.html">
+
+                    <button class="btn bg-lime-400 hover:bg-lime-500">Blog</button>
+                </a>
+            </div>
+            <div class="navbar-center flex items-center space-x-4">
+                <img src="assets/logo.png" alt="">
+                <a class="font-bold hidden md:block md:text-3xl ">Donate to <span class="block md:inline">Bangladesh</span> </a>
+            </div>
+            <div class="navbar-end md:mr-16">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/coin.png" alt="">
+                    <h1 class="md:text-2xl font-bold"> <span id="current-balance">5000</span>BDT</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="space-y-9 md:space-y-14 ">
+
+        <section class="donation justify-center sticky top-24 z-10   bg-slate md:h-24 flex items-center">
+            <div class="space-x-4 sticky top-20 md:text-xl">
+                <!-- user action button  -->
+                <button id="btn-donation"
+                    class="btn md:text-xl bg-lime-400 hover:bg-lime-500 active:bg-lime-300">Donation</button>
+                <button id="btn-history" class="btn md:text-xl hover:bg-lime-500 active:bg-lime-300">History</button>
+            </div>
+        </section>
+
+        <!-- card container start -->
+        <section id="donate" class="card-container max-w-[1170px] mx-auto space-y-8">
+            <!-- Donate for noakhali starts -->
+
+            <div class="card card-side flex flex-col md:flex-row bg-base-100 shadow-xl p-6 border border-gray-100">
+                <figure class="rounded-md">
+                    <img src='assets/noakhali.png' alt="Movie" />
+                </figure>
+                <div class="card-body ">
+                    <div class="bg-gray-100 w-max-content flex items-center p-2 space-x-2 rounded-md">
+                        <img src="assets/coin.png" alt="">
+                        <p class="">
+                            <span id="current-collection-noakhali">0</span> BDT
+                        </p>
+                    </div>
+                    <h2 class="card-title font-bold text-black">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="max-w-[520px] leading-7"> The recent floods in Noakhali have caused significant damage to
+                        homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="input-donate-noakhali" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered input-md w-full " />
+                    <div class="card-actions ">
+                        <button id="btn-donate-noakhali"
+                            class="btn btn-primary w-full font-bold text-black bg-lime-400 border-none hover:bg-lime-300 text-lg">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Donate for noakhali ends -->
+
+            <!-- Donate for feni starts -->
+
+            <div class="card card-side flex flex-col md:flex-row bg-base-100 shadow-xl p-6 border border-gray-100">
+                <figure class="rounded-md">
+                    <img src='assets/feni.png' alt="Movie" />
+                </figure>
+                <div class="card-body ">
+                    <div class="bg-gray-100 w-max-content flex items-center p-2 space-x-2 rounded-md">
+                        <img src="assets/coin.png" alt="">
+                        <p class="">
+                            <span id="current-collection-feni">0</span> BDT
+                        </p>
+                    </div>
+                    <h2 class="card-title font-bold text-black">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="max-w-[520px] leading-7"> The recent floods in Feni have devastated local communities,
+                        leading to severe disruption and loss. Your generous donation will help provide immediate aid,
+                        including food, clean water, and medical supplies, to those affected by this calamity. Together,
+                        we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every
+                        contribution counts towards making a real difference. Please consider donating today to assist
+                        those in urgent need.</p>
+                    <input id="input-donate-feni" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered input-md w-full " />
+                    <div class="card-actions ">
+                        <button id="btn-donate-feni"
+                            class="btn btn-primary w-full font-bold text-black bg-lime-400 border-none hover:bg-lime-300 text-lg">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Donate for feni ends -->
+            <!-- Donate for Student movement starts -->
+
+            <div class="card card-side flex flex-col md:flex-row bg-base-100 shadow-xl p-6 border border-gray-100">
+                <figure class="rounded-md">
+                    <img src='assets/quota-protest.png' alt="Movie" />
+                </figure>
+                <div class="card-body ">
+                    <div class="bg-gray-100 w-max-content flex items-center p-2 space-x-2 rounded-md">
+                        <img src="assets/coin.png" alt="">
+                        <p class="">
+                            <span id="current-collection-student">0</span> BDT
+                        </p>
+                    </div>
+                    <h2 class="card-title font-bold text-black">Aid for Injured in the Quota Movement</h2>
+                    <p class="max-w-[520px] leading-7"> The recent Quota movement has resulted in numerous injuries and
+                        significant hardship for many individuals. Your support is crucial in providing medical
+                        assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help
+                        ensure that injured individuals receive the care and support they need during this challenging
+                        time. Every donation plays a vital role in alleviating their suffering and aiding in their
+                        recovery. Please consider making a donation to support these brave individuals in their time of
+                        need.</p>
+                    <input id="input-donate-student" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered input-md w-full " />
+                        <div class="card-actions ">
+                            <button id="btn-donate-student"
+                                class="btn btn-primary w-full font-bold text-black bg-lime-400 border-none hover:bg-lime-300 text-lg">Donate
+                                Now</button>
+                        </div>
+                </div>
+            </div>
+            <!-- Donate for Student movement ends -->
+
+
+        </section>
+        <section id="history" class="hidden max-w-[1170px] mx-auto space-y-8">
+            <div id="history-content" class="space-y-5">
+
+                
+            </div>
+        </section>
+    </main>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="text-center text-black text-3xl font-bold">Congrates!</h3>
+            <div>
+                <img class="mx-auto mt-5" src="assets/coin.png" alt="">
+            </div>
+            <p class="py-4 text-center">You have donated for Humankind</p>
+            <p class="py-4 text-center text-xl font-bold text-black">Successfully</p>
+            <div class="modal-action justify-center">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn ">Close confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <script src="js/utility.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

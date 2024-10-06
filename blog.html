@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend-normal {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bg-slate {
+            background-color: rgba(241, 245, 249, 0.98);
+        }
+
+        .w-max-content {
+            width: max-content;
+        }
+    </style>
+</head>
+<body class=".lexend-normal">
+    <header class="sticky top-0 z-10">
+        <div class="navbar bg-orange-50   h-24">
+            <div class="navbar-start md:ml-16">
+                <a href="index.html">
+
+                    <button class="btn bg-lime-400 hover:bg-lime-500">Home</button>
+                </a>
+            </div>
+            <div class="navbar-center flex items-center space-x-4">
+                <img src="assets/logo.png" alt="">
+                <a class="font-bold md:text-3xl ">Donate to <span class="block md:inline">Bangladesh</span> </a>
+            </div>
+            <div class="navbar-end md:mr-16">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/coin.png" alt="">
+                    <h1 class="md:text-2xl font-bold"> <span id="current-balance">5000</span>BDT</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container mt-8 mx-auto">
+            
+            <div class="container-fqa mx-auto max-w-max[300px] md:max-w[700px] lg:max-w-[1100px]"> 
+                <div class="flex  items-center mb-6">
+
+                    <h1 class="text-4xl text-balance font-bold">Important Question </h1>
+                    <img src="assets/question.gif" class="h-10" alt="">
+                </div>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" checked="checked" />
+                      <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                      <div class="collapse-content">
+                        <p>hello</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium">How Do you select an Element from the DOM?</div>
+                      <div class="collapse-content">
+                        <p>hello</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">What is event Delegation in context of Dom, Why it is useful?</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How Do you manipulate an element's Attributes and Styles using DOM?</div>
+                        <div class="collapse-content">
+                          <p>hello</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
